@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityYeniKisi">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Ad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSurname"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Soyad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etName"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etEposta"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Eposta"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etSurname"
+        app:layout_constraintStart_toStartOf="@+id/etSurname"
+        app:layout_constraintTop_toBottomOf="@+id/etSurname" />
+
+    <Button
+        android:id="@+id/btnKaydet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Kaydet"
+        app:layout_constraintEnd_toEndOf="@+id/etEposta"
+        app:layout_constraintStart_toStartOf="@+id/etEposta"
+        app:layout_constraintTop_toBottomOf="@+id/etEposta" />
+
+    <Button
+        android:id="@+id/btnSil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Sil"
+        app:layout_constraintEnd_toEndOf="@+id/btnKaydet"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/btnKaydet"
+        app:layout_constraintTop_toBottomOf="@+id/btnKaydet" />
+</androidx.constraintlayout.widget.ConstraintLayout>
