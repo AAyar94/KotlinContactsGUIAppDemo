@@ -52,10 +52,10 @@ class KisiIslemleri(context : Context) {
     }
 
     @SuppressLint("Range")
-    fun TumKisilerGetir() : ArrayList<Kisi>{
+    fun TumKisileriGetir() : ArrayList<Kisi>{
         val kisiListesi = ArrayList<Kisi>()
         Ac()
-        val sql="Select * from Kisi"
+        val sql="Select * from Kisi order by Ad DESC"
         val c = dbKisi!!.rawQuery(sql,null)
         if (c.moveToFirst()){
             var kisi : Kisi
